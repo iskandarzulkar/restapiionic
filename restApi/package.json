@@ -1,0 +1,19 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "rest api for ionic uas ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iskandarzulkar/restapiionic.git"
+  },
+  "author": "iskandar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iskandarzulkar/restapiionic/issues"
+  },
+  "homepage": "https://github.com/iskandarzulkar/restapiionic#readme"
+}
