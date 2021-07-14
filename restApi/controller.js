@@ -71,7 +71,8 @@ exports.showdatapilih = function(req,res){
 // show data pilgub
 exports.showdatapilgub = function(req,res){
     
-    connection.query("SELECT capil.nomer_capil, capil.nama_capil, capil.partai, capil.visi, capil.misi, capil.jab_capil, capil.poto from capil INNER JOIN nocapil ON capil.nomer_capil = nocapil.nomer_capil",
+    // connection.query("SELECT capil.nomer_capil, capil.nama_capil, capil.partai, capil.visi, capil.misi, capil.jab_capil, capil.poto from capil INNER JOIN nocapil ON capil.nomer_capil = nocapil.nomer_capil",
+    connection.query("SELECT * FROM capil",
     function(error, rows, fields){
         // console.log(rows);
         if(error){

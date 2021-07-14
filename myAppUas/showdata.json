@@ -1,0 +1,53 @@
+{
+    "status": 200,
+    "values": {
+        "1": [
+            {
+                "id_capil": 1,
+                "nomer_capil": 1,
+                "nama_capil": "iskandar zulkarnain",
+                "partai": "demokrat",
+                "visi": "membangun negri",
+                "misi": "mensejahterahkan rakyat",
+                "jab_capil": "ketua",
+                "poto": "iskandar.jpg"
+            },
+            {
+                "id_capil": 2,
+                "nomer_capil": 1,
+                "nama_capil": "fazar sidik",
+                "partai": "demokrat",
+                "visi": "membangun negri",
+                "misi": "mensejahterahkan rakyat",
+                "jab_capil": "ketua",
+                "poto": "iskandar.jpg"
+            }
+        ],
+        "2": [
+            {
+                "id_capil": 3,
+                "nomer_capil": 2,
+                "nama_capil": "abdurahman sholeh",
+                "partai": "PDI",
+                "visi": "t",
+                "misi": "t",
+                "jab_capil": "ketua",
+                "poto": "agp.jpg"
+            },
+            {
+                "id_capil": 4,
+                "nomer_capil": 2,
+                "nama_capil": "sugianto rahman",
+                "partai": "PDI",
+                "visi": "t",
+                "misi": "t",
+                "jab_capil": "wakil",
+                "poto": "jkj.jpg"
+            }
+        ]
+    }
+},
+
+
+{"records" :
+    [{"userid":"1","username":"iskandar","userpass":"1234"},{"userid":"2","username":"abcde","userpass":"1234"},{"userid":"6","username":"abdec","userpass":"1234"}]}
