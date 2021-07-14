@@ -54,3 +54,30 @@ exports.registercapil = function(req,res){
     });
 
 }
+
+
+// show data pilih 
+exports.showdatapilih = function(req,res){
+    connection.query('SELECT data_pilih.nik, data_pilih.nomer_capil, data_pilih.date, user.domisili, user.fullname from data_pilih INNER JOIN user ON data_pilih.nik = user.nik',
+    function(error, rows, field){
+        if(error){
+            console.log(error)
+        }else{
+            response.okshow(rows, res)
+        }
+    })
+}
+
+// show data pilgub
+exports.showdatapilgub = function(req,res){
+    
+    connection.query("SELECT capil.nomer_capil, capil.nama_capil, capil.partai, capil.visi, capil.misi, capil.jab_capil, capil.poto from capil INNER JOIN nocapil ON capil.nomer_capil = nocapil.nomer_capil",
+    function(error, rows, fields){
+        // console.log(rows);
+        if(error){
+            console.log(error)
+        }else{
+            response.okcap(rows, res)
+        }
+    })
+}

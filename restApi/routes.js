@@ -10,4 +10,10 @@ module.exports = function(app){
 
     app.route('/register-capil')
     .post(jsonku.registercapil);
+
+    app.route('/showdatapilih')
+    .get(jsonku.showdatapilih)
+
+    app.route('/showdatapilgub')
+    .get(jsonku.showdatapilgub)
 }
