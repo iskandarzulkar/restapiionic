@@ -16,7 +16,7 @@ exports.register = function (req, res) {
         domisili : req.body.domisili,
         password : md5(req.body.password)
     }
-
+    // console.log(post);
     var query = "SELECT nik from ?? where ??=?";
     var table = ["user", "nik", post.nik];
 
@@ -98,15 +98,14 @@ exports.login = function (req,res) {
 // pilih capil 
 exports.pilihcapil = function(req,res){
     var data ={
-        nik : req.body.nik,
+        id_user : req.body.id_user,
         nomer_capil : req.body.nomer_capil,
         date : new Date()
     }
 
     // CEK NIK TEREGISTER ATAU TIDAK 
-    // var query = "SELECT nik FROM ?? WEHRE ??=?";
-    var query = 'SELECT nik FROM ?? WHERE ??=?';
-    var table = ['user', 'nik', data.nik];
+    var query = 'SELECT id_user FROM ?? WHERE ??=?';
+    var table = ['user', 'id_user', data.id_user];
     query     = mysql.format(query, table);
     console.log(query);
 
@@ -116,8 +115,8 @@ exports.pilihcapil = function(req,res){
         }else{
             if(rows.length == 1){
                 // cek nik sudah pernah memilih atau belum 
-                var query = "SELECT nik FROM ?? WHERE ??=?";
-                var table = ['data_pilih', "nik", data.nik];
+                var query = "SELECT id_user FROM ?? WHERE ??=?";
+                var table = ['data_pilih', "id_user", data.id_user];
                 query     = mysql.format(query, table);
             
             
@@ -139,13 +138,13 @@ exports.pilihcapil = function(req,res){
                                 }
                             })
                         }else{
-                            messages = "NIK dengan "+ data.nik + " Sudah Memilih Calon Pilgub";
-                            return res.status(200).send({error: true, message: messages});
+                            messages = "Kamu Sudah Memilih Calon Pilgub Kamu";
+                            return res.status(200).send({error: true, values: messages});
                         }
                     }
                 })
             }else{
-                messages = "NIK dengan "+ data.nik + " Belum Teregister";
+                messages = "NIK dengan "+ data.id_user + " Belum Teregister";
                 return res.status(200).send({error: true, message: messages});
             }
         }

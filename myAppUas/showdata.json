@@ -20,7 +20,7 @@
                 "visi": "membangun negri",
                 "misi": "mensejahterahkan rakyat",
                 "jab_capil": "ketua",
-                "poto": "iskandar.jpg"
+                "poto": "fazar.jpg"
             }
         ],
         "2": [
@@ -32,7 +32,7 @@
                 "visi": "t",
                 "misi": "t",
                 "jab_capil": "ketua",
-                "poto": "agp.jpg"
+                "poto": "sholeh.jpg"
             },
             {
                 "id_capil": 4,
@@ -42,12 +42,8 @@
                 "visi": "t",
                 "misi": "t",
                 "jab_capil": "wakil",
-                "poto": "jkj.jpg"
+                "poto": "rahman.jpg"
             }
         ]
     }
-},
-
-
-{"records" :
-    [{"userid":"1","username":"iskandar","userpass":"1234"},{"userid":"2","username":"abcde","userpass":"1234"},{"userid":"6","username":"abdec","userpass":"1234"}]}
+}

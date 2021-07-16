@@ -58,7 +58,7 @@ exports.registercapil = function(req,res){
 
 // show data pilih 
 exports.showdatapilih = function(req,res){
-    connection.query('SELECT data_pilih.nik, data_pilih.nomer_capil, data_pilih.date, user.domisili, user.fullname from data_pilih INNER JOIN user ON data_pilih.nik = user.nik',
+    connection.query('SELECT data_pilih.nomer_capil, data_pilih.date, user.domisili, user.fullname from data_pilih INNER JOIN user ON data_pilih.id_user = user.id_user',
     function(error, rows, field){
         if(error){
             console.log(error)

@@ -1,6 +1,8 @@
 {
   "name": "myAppUas",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*",
